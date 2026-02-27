@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdtf3qxi8vjt"]
+
+[ext_resource type="PackedScene" uid="uid://cmg2muc4hn14t" path="res://Canon/Formal/tine.tscn" id="1_hj1uk"]
+
+[node name="Workspace" type="Node2D"]
+
+[node name="LockedBG" type="ColorRect" parent="."]
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 900.0
+offset_bottom = 700.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="TineEsc" parent="." instance=ExtResource("1_hj1uk")]
+
+[node name="Tine1" parent="." instance=ExtResource("1_hj1uk")]
+offset_top = 50.0
+offset_bottom = 80.0
+
+[node name="Tine2" parent="." instance=ExtResource("1_hj1uk")]
+offset_top = 90.0
+offset_bottom = 120.0
+
+[node name="Tine3" parent="." instance=ExtResource("1_hj1uk")]
+offset_top = 130.0
+offset_bottom = 160.0
+
+[node name="Tine4" parent="." instance=ExtResource("1_hj1uk")]
+offset_top = 170.0
+offset_bottom = 200.0
