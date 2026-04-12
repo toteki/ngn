@@ -12,20 +12,24 @@ offset_bottom = 700.0
 color = Color(0, 0, 0, 1)
 metadata/_edit_lock_ = true
 
-[node name="TineEsc" parent="." instance=ExtResource("1_hj1uk")]
-
-[node name="Tine1" parent="." instance=ExtResource("1_hj1uk")]
-offset_top = 50.0
-offset_bottom = 80.0
+[node name="Tine" parent="." instance=ExtResource("1_hj1uk")]
 
 [node name="Tine2" parent="." instance=ExtResource("1_hj1uk")]
+offset_top = 30.0
+offset_bottom = 60.0
+
+[node name="Tine3" parent="." instance=ExtResource("1_hj1uk")]
+offset_top = 60.0
+offset_bottom = 90.0
+
+[node name="Tine4" parent="." instance=ExtResource("1_hj1uk")]
 offset_top = 90.0
 offset_bottom = 120.0
 
-[node name="Tine3" parent="." instance=ExtResource("1_hj1uk")]
-offset_top = 130.0
-offset_bottom = 160.0
+[node name="Tine5" parent="." instance=ExtResource("1_hj1uk")]
+offset_top = 120.0
+offset_bottom = 150.0
 
-[node name="Tine4" parent="." instance=ExtResource("1_hj1uk")]
-offset_top = 170.0
-offset_bottom = 200.0
+[node name="Tine6" parent="." instance=ExtResource("1_hj1uk")]
+offset_top = 150.0
+offset_bottom = 180.0
