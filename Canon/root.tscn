@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://bhytroqmm7xle"]
+[gd_scene format=3 uid="uid://bhytroqmm7xle"]
 
 [ext_resource type="PackedScene" uid="uid://823kvmei05g8" path="res://Canon/Formal/jabberwocky.tscn" id="1_664rj"]
 
-[node name="Root" type="Control"]
+[node name="Root" type="Control" unique_id=2011545999]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -10,5 +10,25 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Jabberwocky" parent="." instance=ExtResource("1_664rj")]
+[node name="Overflow" type="ColorRect" parent="." unique_id=1634612914]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -50.0
+offset_top = -50.0
+offset_right = 50.0
+offset_bottom = 50.0
+color = Color(0, 0, 1, 1)
+
+[node name="BG" type="ColorRect" parent="." unique_id=202393864]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Jabberwocky" parent="." unique_id=698131259 instance=ExtResource("1_664rj")]
 layout_mode = 1
