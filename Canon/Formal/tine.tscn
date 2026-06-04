@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmg2muc4hn14t"]
+
+[ext_resource type="Texture2D" uid="uid://ca6hp1bw65otn" path="res://Canon/Inbox/BTN 400 100 OUTER.png" id="1_ul4o6"]
+
+[node name="Tine" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 120.0
+offset_bottom = 30.0
+
+[node name="Extent" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_ul4o6")
+centered = false
+
+[node name="Intent" type="Label" parent="."]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 2.5
+offset_right = 111.0
+offset_bottom = 25.5
+theme_override_font_sizes/font_size = 16
+text = "Label 12Char"
+vertical_alignment = 1
+max_lines_visible = 1
+visible_characters = 12
+
+[node name="Key" type="Label" parent="."]
+modulate = Color(0.47058824, 0.47058824, 0.47058824, 1)
+layout_mode = 0
+offset_left = 122.5
+offset_top = 5.0
+offset_right = 147.5
+offset_bottom = 25.0
+theme_override_font_sizes/font_size = 12
+text = "Key"
+vertical_alignment = 1
+max_lines_visible = 1
+visible_characters = 3
