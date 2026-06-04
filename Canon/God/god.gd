@@ -2,14 +2,18 @@ extends Node
 # God is the project's main Autoload script.
 # Project Settings > Globals > Autoload
 
-var decisions:Decisions = Decisions.new() # Load settings
+# Load settings (Desisions.gd) which can be accessed as God.Decisions
+var decisions:Decisions = Decisions.new()
 
-signal jabber(detail: int,text:String) # Log
+# Create a new log signal. Loggers (like Jabberwocky.gd) connect to this.
+signal jabber(detail: int,text:String)
 
+# Create signals for key presses. Many things might connect to these.
 signal orient(key:String) # Arrows
 signal quantify(key:int) # Numbers
 signal specify(key:String) # Special
 
+# Listen for input events from Godot and turn them into God's signals.
 func _input(event:InputEvent) -> void:
 	# Really any node can listen, but we want
 	# to make signals and filter out nonsense
