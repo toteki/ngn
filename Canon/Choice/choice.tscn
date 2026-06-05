@@ -1,13 +1,14 @@
 [gd_scene load_steps=2 format=3 uid="uid://ccom2fxoq2opj"]
 
-[ext_resource type="Script" uid="uid://bcs10cinimp14" path="res://Choice/choice.gd" id="1_srli5"]
+[ext_resource type="Script" uid="uid://bcs10cinimp14" path="res://Canon/Choice/choice.gd" id="1_srli5"]
 
-[node name="Choice" type="Control"]
+[node name="Choice" type="Control" node_paths=PackedStringArray("Payload")]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 190.0
 offset_bottom = 40.0
 script = ExtResource("1_srli5")
+Payload = NodePath("Name")
 
 [node name="Border" type="ColorRect" parent="."]
 layout_mode = 1
