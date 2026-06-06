@@ -2,13 +2,15 @@
 
 [ext_resource type="Script" uid="uid://bcs10cinimp14" path="res://Canon/Choice/choice.gd" id="1_srli5"]
 
-[node name="Choice" type="Control" node_paths=PackedStringArray("Payload")]
+[node name="Choice" type="Control" node_paths=PackedStringArray("Payload", "Highlight", "Border")]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 190.0
 offset_bottom = 40.0
 script = ExtResource("1_srli5")
 Payload = NodePath("Name")
+Highlight = NodePath("Highlight")
+Border = NodePath("Border")
 
 [node name="Border" type="ColorRect" parent="."]
 layout_mode = 1
@@ -31,6 +33,15 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.11764706, 0.11764706, 0.11764706, 1)
 
+[node name="Highlight" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0.09803922)
+
 [node name="Name" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = -1
@@ -42,7 +53,7 @@ offset_right = -5.0
 offset_bottom = -5.0
 grow_vertical = 2
 theme_override_font_sizes/font_size = 14
-text = "[0] Choice"
+text = "[Key] Choice"
 horizontal_alignment = 1
 vertical_alignment = 1
 max_lines_visible = 1

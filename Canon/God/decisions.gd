@@ -13,3 +13,8 @@ var jabberwockyLvInput:int = 2
 var jabberwockyLvOrient:int = 3
 var jabberwockyLvQuantify:int = 3
 var jabberwockyLvSpecify:int = 3
+
+# Controls Choice button flash behavior
+var choiceFlashMax:float = 0.5
+var choiceFlashDecay:float = 1.0
+var choiceFlashMin:float = 0.1
